@@ -126,7 +126,7 @@ int buscaHash_EnderAberto(Hash *ha, char *nome, struct aluno *al, FILE* arq){
         {
             *al = *(ha->itens[newPos]);
 
-            fprintf(arq, "Chave a ser buscada: %s\tPosicao: %d\tColisoes: %d\n", chave, pos, colisoes);
+            fprintf(arq, "Chave a ser buscada: %d\tPosicao: %d\tColisoes: %d\n", chave, pos, colisoes);
 
             return 1;
         }
